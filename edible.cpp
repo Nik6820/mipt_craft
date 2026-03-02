@@ -23,7 +23,7 @@ void food::eat() {
 }
 
 void food::get_effect() {
-    std::cout << "No effects lol, sucks to suck" << std::endl;
+    std::cout << "Sucks to suck" << std::endl;
 }
 
 void food::stack(int amount) {
@@ -69,7 +69,7 @@ cooked_beef::cooked_beef(int hunger_, float saturation_, std::string name_, int 
 
 void cooked_beef::eat() {
     food::eat();
-    std::cout << "Delicious steak! One of the best foods in Minecraft!" << std::endl;
+    std::cout << "лаваш говядина" << std::endl;
 }
 
 // suspicious_stew class
