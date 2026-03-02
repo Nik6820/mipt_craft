@@ -38,43 +38,43 @@ class Pickaxe : public Tool {
 public:
     Pickaxe();
     Pickaxe(int durability_, int maxDurability_, std::string material_, std::string name_, int damage_, int miningSpeed_);
-    void use() override;
-    void sound() override;
-    void onBreak() override;
+    void use();
+    void sound();
+    void onBreak();
 };
 
 class Axe : public Tool {
 public:
     Axe();
     Axe(int durability_, int maxDurability_, std::string material_, std::string name_, int damage_, int miningSpeed_);
-    void use() override;
-    void sound() override;
-    void onBreak() override;
+    void use();
+    void sound();
+    void onBreak();
 };
 
 class Shovel : public Tool {
 public:
     Shovel();
     Shovel(int durability_, int maxDurability_, std::string material_, std::string name_, int damage_, int miningSpeed_);
-    void use() override;
-    void sound() override;
-    void onBreak() override;
+    void use();
+    void sound();
+    void onBreak();
 };
 
 class Sword : public Tool {
 public:
     Sword();
     Sword(int durability_, int maxDurability_, std::string material_, std::string name_, int damage_, int miningSpeed_);
-    void use() override;
-    void sound() override;
-    void onBreak() override;
+    void use();
+    void sound();
+    void onBreak();
 };
 
 class Hoe : public Tool {
 public:
     Hoe();
     Hoe(int durability_, int maxDurability_, std::string material_, std::string name_, int damage_, int miningSpeed_);
-    void use() override;
-    void sound() override;
-    void onBreak() override;
+    void use();
+    void sound();
+    void onBreak();
 };
