@@ -1,6 +1,9 @@
 #include "instruments.h"
 #include <iostream>
 
+#include "takonef_craft.h"
+#include "takonef_craft.cpp"
+
 using namespace std;
 
 int main() {
@@ -41,6 +44,7 @@ int main() {
     for (int i = 0; i < 60; ++i) {
         woodenSword.use();
     }
+    
 
     cout << "\n--- Final stats ---\n" << endl;
     cout << diamondPick.getName() << " durability: " << diamondPick.getDurability() << "/" << diamondPick.getMaxDurability() << endl;
@@ -48,6 +52,31 @@ int main() {
     cout << stoneShovel.getName() << " durability: " << stoneShovel.getDurability() << "/" << stoneShovel.getMaxDurability() << endl;
     cout << woodenSword.getName() << " durability: " << woodenSword.getDurability() << "/" << woodenSword.getMaxDurability() << endl;
     cout << goldHoe.getName() << " durability: " << goldHoe.getDurability() << "/" << goldHoe.getMaxDurability() << endl;
+
+    std::cout << "\n=== FOOD TEST ===" << std::endl;
+    golden_apple god_apple(4, 9.6f, "Enchanted Golden Apple", 1, true);
+    god_apple.eat();
+    
+    cooked_beef steak(8, 12.8f, "Steak", 5);
+    steak.eat();
+    
+    suspicious_stew weird_stew(6, 7.2f, "Suspicious Stew", 3, "Night Vision", 5);
+    weird_stew.eat();
+    
+    std::cout << "\n=== POTION TEST ===" << std::endl;
+    healing_potion health_potion("Healing", "Instant Health", 1, 1, true, false);
+    health_potion.drink();
+    health_potion.splash();
+    
+    strength_potion strong_potion("Strength", "Strength", 3600, 1, false, false);
+    strong_potion.drink();
+    
+    invisibility_potion invis_potion("Invisibility", "Invisibility", 6000, 0, false, true);
+    invis_potion.drink();
+    invis_potion.linger();
+
+
+    
 
     return 0;
 }
