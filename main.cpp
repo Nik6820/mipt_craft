@@ -1,14 +1,14 @@
 #include "instruments.h"
 #include <iostream>
-#include <mob.h>
-#include <neutral_mob.h>
-#include <hostile_mob.h>
-#include <zombie.h>
-#include <spider.h>
-#include <skeleton.h>
-#include <cow.h>
-#include <sheep.h>
-#include <chicken.h>
+#include "mob.h"
+#include "neutral_mob.h"
+#include "hostile_mob.h"
+#include "zombie.h"
+#include "spider.h"
+#include "skeleton.h"
+#include "cow.h"
+#include "sheep.h"
+#include "chicken.h"
 #include "edible.h"
 
 
@@ -88,3 +88,4 @@ int main() {
 
     return 0;
 }
+
