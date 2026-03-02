@@ -83,9 +83,23 @@ int main() {
     invis_potion.drink();
     invis_potion.linger();
 
+    zombie Frank(50, 2, 3, "Frank", 5);
+    Frank.mob_sound();
+
+    spider Bob(20, 4, 1, "Bob", 2);
+    Bob.mob_sound();
+
+    skeleton Nikitos(35, 2, 3, "Nikitos", 4);
+    Nikitos.mob_sound();
+
+    cow Anton(40, 3, 3, "Anton");
+    cout << Anton.get_speed() << endl;
+    Anton.get_milked();
+    cout << Anton.get_speed() << endl;
+    cout << Anton.get_hp() << endl;
+
 
 
 
     return 0;
-}
-
+}	
